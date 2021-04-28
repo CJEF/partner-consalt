@@ -2,6 +2,7 @@ const swiper = new Swiper(".swiper-container", {
   // Optional parameters
   loop: true,
   spaceBetween: 10,
+  paginationClickable: true,
 
   autoplay: {
     delay: 3000,

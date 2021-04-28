@@ -69,6 +69,7 @@
         background-repeat: no-repeat;
         padding: 50px 58px;
         &__container {
+            z-index: 5;
             background-image: url('../images/src/notebook.png');
             background-repeat: no-repeat;
             padding: 30px 15px 85px;
