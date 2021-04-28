@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>partner connsalt</title>
 	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" href="css/bundle.css">
 </head>
 <body>
 
@@ -16,14 +17,19 @@
 				<img src="./images/src/logo.svg" alt="logo" class="intro__img">
 			</div>
 			<h1 class="intro__title">Внедрение корпоративного портала для <span class="span--orange">ТОО &laquo;Бизнес </span><span class="span--blue">Партнер Консалт&raquo;</span></h1>
-			<img src="./images/src/arrow.svg" alt="scroll down arrow" class="intro__arrow">
+			<a class="intro__arrow" href="#about">
+				<svg xmlns="http://www.w3.org/2000/svg" width="26" height="17" viewbox="0 0 26 17" fill="none">
+					<path d="M13.3333 0.999999L13.3333 16M13.3333 16L1.66666 6M13.3333 16L25 6" stroke="white" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</a>
 		</div>
 	</section>
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="about__inner">
-				<h2 class="about__title">О компании</h2>
+				<h2 class="about__title title">О компании</h2>
 				<p class="text about__text">ТОО «Бизнес Партнер Консалт» осуществляет оценочную и консалтинговую деятельность по сопровождению бизнеса с 2006 года.
 				За время работы партнерами компании стали более 35 финансовых организаций, в том числе банки второго уровня, страховые,
 				лизинговые и инвестиционные организации.</p>
@@ -32,44 +38,47 @@
 	</section>
 
 	<section class="tasks">
-		<div class="container">
-			<h2 class="tasks__title">Задачи</h2>
+		<div class="container tasks__inner">
+			<h2 class="tasks__title title">Задачи</h2>
 			<ul class="tasks__list">
 				<li class="tasks__item">
-					<img src="./images/src/task-1" alt="icon" class="tasks__icon">
+					<img src="./images/src/task-1.svg" alt="icon" class="tasks__icon">
 					<p class="tasks__text text">Систематизировать работу отдела продаж с помощью CRM.</p>
 				</li>
 				<li class="tasks__item">
-					<img src="./images/src/task-2" alt="icon" class="tasks__icon">
+					<img src="./images/src/task-2.svg" alt="icon" class="tasks__icon">
 					<p class="tasks__text text">Упростить взаимодействие между отделами и сотрудниками.</p>
 				</li>
 				<li class="tasks__item">
-					<img src="./images/src/task-3" alt="icon" class="tasks__icon">
+					<img src="./images/src/task-3.svg" alt="icon" class="tasks__icon">
 					<p class="tasks__text text">Получать актуальную статистику по объему продаж и проектов.</p>
 				</li>
 				<li class="tasks__item">
-					<img src="./images/src/task-4" alt="icon" class="tasks__icon">
+					<img src="./images/src/task-4.svg" alt="icon" class="tasks__icon">
 					<p class="tasks__text text">Организовать процесс и контроль работы сотрудников.</p>
 				</li>
 			</ul>
 			<div class="tasks__btn">
 				<a href="javascript:;" class="btn btn--white">Обсудим ваши задачи?</a>
 			</div>
+			<img src="./images/src/sun.svg" alt="sun logo" class="tasks__bg-img">
+
 		</div>
 	</section>
 
 	<section class="decision">
-		<div class="container">
+		<div class="container decision__inner">
 			<h2 class="decision__title title">Решение</h2>
 			<p class="decision__text text">Сначала зарегистрировали портал и&nbsp;провели общую настройку. Затем пригласили сотрудников ТОО &laquo;Бизнес Партнер
 			Консалт&raquo;, чтобы настроить структуру компании на&nbsp;портале.</p>
 			<div class="decision__steps">
-				<h3 class="decision__steps-title">Далее работа проходила так:</h3>
+				<h3 class="decision__steps-title title">Далее работа проходила так:</h3>
 				<div class="decision__step decision-step">
 					<div class="decision-step__content">
 						<img class="decision-step__arrow" src="./images/src/arrow.svg" alt="arrow">
 						<p class="decision-step__text text">Для отслеживания трафика и&nbsp;фильтрации обращений настроили списки источников CRM и&nbsp;стадии лидов и&nbsp;сделок.</p>
 					</div>
+					<img src="./images/src/bitrix-1.png" alt="bitrix" class="decision__img">
 				</div>
 				<div class="decision__step decision-step">
 					<div class="decision-step__content">
@@ -77,6 +86,7 @@
 						<p class="decision-step__text text">Оптимизировали карточки &laquo;Лид&raquo;, &laquo;Контакт&raquo;, &laquo;Компания&raquo;, &laquo;Сделка&raquo;, чтобы
 						формировать отчеты, отслеживать объемы, историю продаж, сегментировать базу клиентов.</p>
 					</div>
+					<img src="./images/src/bitrix-2.png" alt="bitrix">
 				</div>
 				<div class="decision__step decision-step">
 					<div class="decision-step__content">
@@ -100,16 +110,38 @@
 				<div class="decision__step decision-step">
 					<div class="decision-step__content">
 						<img class="decision-step__arrow" src="./images/src/arrow.svg" alt="arrow">
-						<p class="decision-step__text text">Настроили 3 вида отчётов для отдела оценки:</p>
-						<p class="decision-step__text text">&mdash;&nbsp;по&nbsp;выполненным проектам. Позволяет отслеживать количество проектов, завершенных тем или иным
-						сотрудником;</p>
-						<p class="decision-step__text text">&mdash;&nbsp;по&nbsp;проектам в&nbsp;работе. Для оценки объёма работ и&nbsp;загруженности;</p>
-						<p class="decision-step__text text">&mdash;&nbsp;журнал выездов. Для планирования и&nbsp;отслеживания выездов на&nbsp;объекты.</p>
+						<div class="decision-step__text-wrap">
+							<p class="decision-step__text text">Настроили 3 вида отчётов для отдела оценки:</p>
+							<p class="decision-step__text text">&mdash;&nbsp;по&nbsp;выполненным проектам. Позволяет отслеживать количество проектов, завершенных тем или иным
+							сотрудником;</p>
+							<p class="decision-step__text text">&mdash;&nbsp;по&nbsp;проектам в&nbsp;работе. Для оценки объёма работ и&nbsp;загруженности;</p>
+							<p class="decision-step__text text">&mdash;&nbsp;журнал выездов. Для планирования и&nbsp;отслеживания выездов на&nbsp;объекты.</p>
+						</div>
 					</div>
 				</div>
-				<div class="decision__slider">
+			</div>
+		</div>
+		<div class="decision-slider">
+			<div class="decision-slider__container">
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 
 				</div>
+			</div>
+		</div>
+		<div class="container decision__inner">
+			<div class="decision__steps">
 				<div class="decision__step decision-step">
 					<div class="decision-step__content">
 						<img class="decision-step__arrow" src="./images/src/arrow.svg" alt="arrow">
@@ -122,7 +154,7 @@
 
 	<section class="quotes">
 		<div class="container">
-			<h2 class="quotes__title"></h2>
+			<h2 class="quotes__title title"></h2>
 			<q class="quote">Благодарим Hoster.KZ за&nbsp;проведенную работу по&nbsp;настройке и&nbsp;внедрению Битрикс24&nbsp;в нашей компании.</q>
 			<q class="quote">Все поставленные нами задачи были решены. Благодаря проведенной настройке работа сотрудников компании стала более
 			организованной, данные структурированы, аналитика и&nbsp;отчеты наглядными и&nbsp;доступными.</q>
@@ -158,7 +190,7 @@
 </main>
 
 
-
+<script src="js/bundle.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 </html>

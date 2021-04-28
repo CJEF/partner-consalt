@@ -1,0 +1,55 @@
+.intro {
+    background-image: url("../images/src/intro-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    &__inner {
+        padding-top: 95px;
+        padding-bottom: 215px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 970px;
+        margin: 0 auto;
+    }
+    &__logo {
+        margin: 0 auto 85px;
+    }
+    &__title {
+        text-align: center;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 51px;
+        .span--blue,
+        .span--orange {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 51px;
+        }
+        .span--orange {
+            color: $orange;
+        }
+        .span--blue {
+            color: $blue;
+        }
+    }
+    &__arrow {
+        margin: 115px auto 0;
+        width: 23px;
+        height: 15px;
+        cursor: pointer;
+        animation: scroll;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes scroll {
+  0%   {transform: translateY(0);}
+  50%   {transform: translateY(20px);}
+  100%  {transform: translateY(0);}
+}

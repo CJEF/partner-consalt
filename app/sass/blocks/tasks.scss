@@ -1,0 +1,35 @@
+.tasks {
+    background-color: $orange;
+    background-image: url('../images/src/tasks-bg.png');
+    background-size: cover;
+    &__inner {
+        padding: 70px 15px;
+        position: relative;
+    }
+    &__title {
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+    &__icon {
+        margin-right: 30px;
+    }
+    &__text {
+        color: #fff;
+    }
+    &__btn {
+        margin-top: 40px;
+    }
+    &__bg-img {
+        position: absolute;
+        top: 18%;
+        right: -15%;
+    }
+}
