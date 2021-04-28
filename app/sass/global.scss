@@ -108,14 +108,22 @@ h3.title {
 .btn--white {
     display: inline-flex;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 30px;
     height: 60px;
     width: 300px;
-    color: $black;
+    color: $orange;
     background-color: #fff;
     position: relative;
+    border: 3px solid #fff;
+    span {
+        margin-right: 20px;
+        font-weight: 600;
+    }
+    path {
+        stroke: $orange;
+    }
     &:after {
-        content: url('../images/src/btn-arrow.svg');
+        // content: url('../images/src/arrow--orange.svg');
         position: absolute;
         width: 14px;
         height: 9px;
@@ -124,6 +132,75 @@ h3.title {
         transform: translateY(-100%);
     }
     &:hover {
-        background-color:  rgba(255, 255, 255, 0.9);
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff;
+        path {
+            stroke: #fff;
+        }
     }
+}
+
+.btn--white-2 {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 60px;
+    width: 300px;
+    color: $black;
+    background-color: #fff;
+    position: relative;
+    border: 3px solid #fff;
+    span {
+        margin-right: 20px;
+        font-weight: 600;
+    }
+    path {
+        stroke: $black;
+    }
+    &:after {
+        // content: url('../images/src/arrow--orange.svg');
+        position: absolute;
+        width: 14px;
+        height: 9px;
+        right: 35px;
+        top: 50%;
+        transform: translateY(-100%);
+    }
+    &:hover {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.btn--orange {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 40px;
+    height: 60px;
+    width: 230px;
+    color: #fff;
+    background-color: $orange;
+    position: relative;
+    &:after {
+        content: url('../images/src/btn-arrow--white.svg');
+        position: absolute;
+        width: 14px;
+        height: 9px;
+        right: 35px;
+        top: 50%;
+        transform: translateY(-100%);
+    }
+    &:hover {
+        background-color:  #ffb060;
+    }
+}
+
+.swiper-container {
+  width: 597px;
+  height: 373px;
+}
+
+.quote::before,
+.quote::after {
+    font-size: 0;
 }

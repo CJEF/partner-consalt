@@ -1,7 +1,10 @@
 .decision {
     counter-reset: steps;
-    &__inner {
-        padding: 80px 15px;
+    &__inner:first-child {
+        padding: 80px 15px 0;
+    }
+    &__inner:last-child {
+        padding: 0 15px 40px;
     }
     &__title {
         margin-bottom: 22px;
@@ -51,6 +54,7 @@
             }
         }
         &:nth-child(7) {
+            margin-bottom: 80px;
             .decision-step__content {
                 align-items: flex-start;
                 &:before {
@@ -58,6 +62,16 @@
                     transform: none;
                 }
             }
+        }
+    }
+    &-slider {
+        background-image: url('../images/src/decision-slider__bg.png');
+        background-repeat: no-repeat;
+        padding: 50px 58px;
+        &__container {
+            background-image: url('../images/src/notebook.png');
+            background-repeat: no-repeat;
+            padding: 30px 15px 85px;
         }
     }
 }
