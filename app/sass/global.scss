@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+body, body * {
+    max-height: 1000000px; // чтобы не увеличивался шрифт
+}
+
 *,
 *:before,
 *:after {
