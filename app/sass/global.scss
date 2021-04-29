@@ -108,15 +108,17 @@ h3.title {
 .btn--white {
     display: inline-flex;
     align-items: center;
-    padding-left: 30px;
+    padding: 0 31px;
     height: 60px;
-    width: 300px;
     color: $orange;
     background-color: #fff;
     position: relative;
     border: 3px solid #fff;
     span {
         font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     svg {
         transition: .2s ease-in-out;
@@ -141,9 +143,8 @@ h3.title {
 .btn--orange {
     display: inline-flex;
     align-items: center;
-    padding-left: 35px;
+    padding: 0 35px;
     height: 60px;
-    width: 230px;
     color: #fff;
     background-color: $orange;
     position: relative;
@@ -156,6 +157,9 @@ h3.title {
     }
     span {
         font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &:hover {
         background-color:  #fff;
