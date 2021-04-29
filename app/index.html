@@ -18,7 +18,7 @@
 				<img src="./images/src/logo.svg" alt="logo" class="intro__img">
 			</div>
 			<h1 class="intro__title">Внедрение корпоративного портала для <span class="span--orange">ТОО &laquo;Бизнес </span><span class="span--blue">Партнер Консалт&raquo;</span></h1>
-			<a class="intro__arrow" href="#about">
+			<a class="intro__arrow intro-scroll-js" href="#about">
 				<svg xmlns="http://www.w3.org/2000/svg" width="26" height="17" viewbox="0 0 26 17" fill="none">
 					<path d="M13.3333 0.999999L13.3333 16M13.3333 16L1.66666 6M13.3333 16L25 6" stroke="white" stroke-width="2"
 						stroke-linecap="round" stroke-linejoin="round" />
@@ -170,7 +170,7 @@
 						<img class="decision-step__arrow" src="./images/src/arrow.svg" alt="arrow">
 						<p class="decision-step__text text">Для отслеживания трафика и&nbsp;фильтрации обращений настроили списки источников CRM и&nbsp;стадии лидов и&nbsp;сделок.</p>
 					</div>
-					<img src="./images/src/bitrix-1.png" alt="bitrix" class="decision__img">
+					<img class="decision-step__bitrix-design" src="./images/src/bitrix-1.png" alt="bitrix">
 				</div>
 				<div class="decision__step decision-step">
 					<div class="decision-step__content">
@@ -178,7 +178,7 @@
 						<p class="decision-step__text text">Оптимизировали карточки &laquo;Лид&raquo;, &laquo;Контакт&raquo;, &laquo;Компания&raquo;, &laquo;Сделка&raquo;, чтобы
 						формировать отчеты, отслеживать объемы, историю продаж, сегментировать базу клиентов.</p>
 					</div>
-					<img src="./images/src/bitrix-2.png" alt="bitrix">
+					<img class="decision-step__bitrix-design" src="./images/src/bitrix-2.png" alt="bitrix">
 				</div>
 				<div class="decision__step decision-step">
 					<div class="decision-step__content">
@@ -215,6 +215,8 @@
 		</div>
 		<div class="decision-slider">
 			<div class="decision-slider__container container">
+				<div class="swiper-button-prev"></div>
+
 				<div class="swiper-container">
 					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
@@ -227,12 +229,12 @@
 						</div>
 					</div>
 					<!-- If we need pagination -->
-					<div class="swiper-pagination"></div>
 
-					<!-- If we need navigation buttons -->
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-pagination">
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
 				</div>
 			</div>
 		</div>

@@ -15,6 +15,8 @@
     }
     &__logo {
         margin: 0 auto 85px;
+        display: flex;
+        justify-content: center;
     }
     &__title {
         text-align: center;
@@ -45,6 +47,11 @@
         animation: scroll;
         animation-iteration-count: infinite;
         animation-duration: 2s;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
     }
 }
 
